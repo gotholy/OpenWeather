@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+}
+p {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.container {
+  width: 450px;
+  height: max-content;
+  margin-left: 12vw;
+  margin-bottom: 4vh;
+  background-color: #a5a5a5;
+  border-radius: 50px;
+  padding: 28px;
+}
+.inputOutput {
+  font-size: 1.2rem;
+}
+#cityButton {
+  height: 150px;
+  width: 150px;
+  border-radius: 50px;
+  margin: 0 2vw;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+#cityButton:hover {
+  transform: scale(1.1);
+}
+.cityBtnLabel {
+  color: #777;
+  margin-top: 1vh;
+  font-weight: bold;
+}
+.berlin {
+  background-image: url("https://source.unsplash.com/random/?Berlin/");
+  background-position: center;
+  background-size: cover;
+}
+.london {
+  background-image: url("https://source.unsplash.com/random/?london/");
+  background-position: center;
+  background-size: cover;
+}
+.newYork {
+  background-image: url("https://source.unsplash.com/random/?New York/");
+  background-position: center;
+  background-size: cover;
+}
+.sanFrancisco {
+  background-image: url("https://source.unsplash.com/random/?San Francisco/");
+  background-position: center;
+  background-size: cover;
+}
+.tokyo {
+  background-image: url("https://source.unsplash.com/random/?tokyo/");
+  background-position: center;
+  background-size: cover;
+}
+.moskau {
+  background-image: url("https://source.unsplash.com/random/?moskau/");
+  background-position: center;
+  background-size: cover;
+}
+.kapstadt {
+  background-image: url("https://source.unsplash.com/random/?kapstadt/");
+  background-position: center;
+  background-size: cover;
+}
+.singapour {
+  background-image: url("https://source.unsplash.com/random/?Singapour/");
+  background-position: center;
+  background-size: cover;
+}
+.searchContainer {
+  width: 100%;
+  height: min-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchContainer input {
+  width: 84%;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #000;
+  background-color: #e6f5fb;
+  padding: 10px 14px;
+  border-radius: 14px;
+}
+
+.searchContainer input::placeholder {
+  color: #000;
+}
+
+.searchContainer button {
+  width: 46px;
+  height: 46px;
+  background-color: #e6f5fb;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.2s;
+}
+
+.searchContainer button:hover {
+  color: #fff;
+  background-color: #e2e2e2;
+  transform: scale(1.1);
+}
+
+.weatherContainer {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-block: 20px;
+  display: none;
+}
+.weatherContainer img {
+  width: 100px;
+}
+
+.weatherDetailsContainer {
+  margin-block: 20px;
+  text-align: center;
+}
+.weatherDetails {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 25px;
+}
+.weatherDetailsContainer .temperature {
+  font-size: 40px;
+  font-weight: 800;
+  position: relative;
+}
+
+.weatherDetailsContainer .temperature sup {
+  font-size: 20px;
+  position: absolute;
+  font-weight: 600;
+}
+
+.weatherDetailsContainer .description {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.buttonContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 25px;
+  text-align: center;
+  justify-content: space-around;
+}
+.humidity,
+.wind {
+  display: flex;
+  align-items: center;
+}
+
+.humidity {
+  margin-left: 20px;
+}
+
+.wind {
+  margin-right: 20px;
+}
+
+.weatherDetails i {
+  font-size: 36px;
+}
+
+.weatherDetails .text {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.text span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.locationNotFound {
+  margin-top: 20px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.locationNotFound h1 {
+  font-size: 20px;
+  color: #6b6b6b;
+  margin-block-end: 15px;
+}
+.locationNotFound img {
+  width: 80%;
+}

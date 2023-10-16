@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="header">
+          <div class="searchContainer">
+            <input
+              name="city"
+              type="text"
+              placeholder="Enter your location"
+              class="input"
+            />
+
+            <button id="searchBtn"></button>
+          </div>
+        </div>
+
+        <div class="locationNotFound">
+          <h1>Sorry, Location not found!!!</h1>
+          <img src="./assets/img/404.png" alt="404 Error" />
+        </div>
+        <div class="weatherContainer">
+          <div class="inputOutput"></div>
+          <img src="" alt="Weather Image" class="weatherImg" />
+
+          <div class="weatherDetailsContainer">
+            <p class="temperature">0 <sup>°C</sup></p>
+            <p class="description">light rain</p>
+          </div>
+
+          <div class="weatherDetails">
+            <div class="humidity">
+              <div class="text">
+                <span id="humidity">45%</span>
+                <p>Feuchtigkeit</p>
+              </div>
+            </div>
+
+            <div class="wind">
+              <div class="text">
+                <span id="windSpeed">12m/s</span>
+                <p>Wind</p>
+              </div>
+            </div>
+
+            <div class="wind">
+              <div class="text">
+                <span id="timeOnTarget"></span>
+                <p>Uhrzeit</p>
+              </div>
+            </div>
+
+            <div class="wind">
+              <div class="text">
+                <span id="sunset"></span>
+                <p>Sonnenuntergang</p>
+              </div>
+            </div>
+
+            <div class="wind">
+              <div class="text">
+                <span id="sunrise"></span>
+                <p>Sonnenaufgang</p>
+              </div>
+            </div>
+
+            <div class="wind">
+              <div class="text">
+                <span id="geoCoordinates"></span>
+                <p>Geokoordinaten</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttonContainer">
+        <div>
+          <button id="cityButton" class="berlin" value="Berlin"></button>
+          <p class="cityBtnLabel">Berlin</p>
+        </div>
+
+        <div>
+          <button id="cityButton" class="london" value="London"></button>
+          <p class="cityBtnLabel">London</p>
+        </div>
+
+        <div>
+          <button id="cityButton" class="newYork" value="New York"></button>
+          <p class="cityBtnLabel">New York</p>
+        </div>
+
+        <div>
+          <button
+            id="cityButton"
+            class="sanFrancisco"
+            value="San Francisco"
+          ></button>
+          <p class="cityBtnLabel">San Francisco</p>
+        </div>
+
+        <div>
+          <button id="cityButton" class="tokyo" value="Tokyo"></button>
+          <p class="cityBtnLabel">Tokyo</p>
+        </div>
+
+        <div>
+          <button id="cityButton" class="moskau" value="Moskau"></button>
+          <p class="cityBtnLabel">Moskau</p>
+        </div>
+
+        <div>
+          <button id="cityButton" class="kapstadt" value="Kapstadt"></button>
+          <p class="cityBtnLabel">Kapstadt</p>
+        </div>
+
+        <div>
+          <button id="cityButton" class="singapour" value="Singapour"></button>
+          <p class="cityBtnLabel">Singapour</p>
+        </div>
+      </div>
+    </section>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
